@@ -36,9 +36,11 @@ The box plot's median value is close to the higher end of the lower IQR, indicat
 The cumulative density plot's smooth curve indicates no abrupt changes in the billing structure, which would be seen as steep slopes in such a plot.
 
 ![Image2](plots/churn.jpg)
+
 The graph displays a significant class imbalance between the two classes: '0' (No Churn) and '1' (Churn). There are noticeably more customers who have not churned ('0') compared to those who have ('1'). This imbalance is a common issue and will be addressed during the modeling phase to prevent the model from being biased toward the majority class.
 
 ![Image3](plots/monthly_charges_churn.jpg)
+
 **Central Tendency:** The median monthly charge for customers who churn ('1') appears to be higher than for those who do not churn ('0'). This suggests that higher monthly charges could be associated with a greater likelihood of churn.
 
 **Spread and Variability:** The interquartile range (IQR) for both groups is substantial, indicating variability in the monthly charges among customers. However, the IQR for churned customers seems to be wider, implying more variability in the amounts they were charged compared to those who didn't churn.
@@ -47,7 +49,8 @@ The graph displays a significant class imbalance between the two classes: '0' (N
 
 The boxplot indicates that pricing strategy may influence churn. Customers who churn are potentially those who are on higher-priced plans or have additional services that increase their monthly charge. This can signal the need for reviewing pricing structures or customer segmentation in terms of service usage.
 
-![Image4](plot/correlationmatrix.jpg)
+![Image4](plots/correlationmatrix.jpg)
+
 **Monthly Charges and Churn:** There is a positive correlation (0.19) between 'monthly_charges' and 'churn'. This indicates that higher monthly charges are somewhat associated with an increased likelihood of churn. 
 
 **Total Charges and Churn:** The correlation between 'total_charges' and 'churn' is slightly negative (-0.2). This could imply that customers with higher total charges over time are slightly less likely to churn. This might reflect a sense of loyalty or satisfaction among customers who have been with the company longer and thus have accrued higher total charges.
