@@ -60,6 +60,7 @@ The boxplot indicates that pricing strategy may influence churn. Customers who c
 While 'monthly_charges' show a positive correlation with churn, suggesting that customers on higher monthly plans are more prone to leaving, the negative correlation of 'total_charges' with churn could indicate that long-term customers or those who have spent more with the company tend to stay. This suggests that while price sensitivity may affect customer retention, there's also value in nurturing long-term customer relationships.
 
 ![Image5](plots/service_type_distribution.jpg)
+
 **Internet Service:** The left chart shows the distribution of internet services among customers. There is a substantial number of customers with DSL, a higher number with fiber optic, and a segment without any service.
 The right chart shows that customers with fiber optic service have a higher churn rate compared to DSL and those with no service.
 
@@ -85,6 +86,7 @@ The right chart shows that customers with fiber optic service have a higher chur
 **Streaming Services:** Churn rates for streaming TV and movies don't show as clear a trend as other services, indicating that different factors might influence churn for customers interested in streaming.
 
 ![Image6](plots/demographc_columns.jpg)
+
 **Gender vs Churn:** The charts suggest that gender does not have a pronounced difference in churn rates, as both female and male customers have similar churn counts.
 
 **Senior Citizen vs Churn:** The chart shows a higher proportion of churn among senior citizens compared to non-senior citizens. This could suggest that senior citizens are either more sensitive to certain aspects of the service or they have different expectations and needs that are not being met.
@@ -103,9 +105,11 @@ Gender Neutrality in Services: The similar churn rates across genders suggest th
 These demographic insights can guide more personalized marketing and customer service initiatives. For example, providing more supportive services for senior citizens or offering incentives for family plans could be effective.
 
 ![Image7](plots/monthly_charges.jpg)
+
 The histogram shows 'Monthly Charges' distribution for churned and retained customers. Customers with lower charges tend to stay with the company, while those with higher charges are more likely to churn. This suggests that higher pricing may be a factor in customer churn. The company could benefit from examining its pricing structure and possibly offering retention incentives to higher-paying customers to reduce churn.
 
 ![Image8](plots/totalvsmonthly.jpg)
+
 The data points create a triangular pattern, suggesting a relationship between time with the company and the monthly payment amount. Customers with lower total and monthly charges show a mix of churn, while higher total charges, which likely indicate longer tenure, have fewer instances of churn.
 
 At higher monthly charges, churn instances increase regardless of the total charges. This could indicate that customers are more sensitive to higher monthly payments, leading to churn regardless of their tenure.
@@ -113,6 +117,7 @@ At higher monthly charges, churn instances increase regardless of the total char
 The plot implies that while long-term customers tend to stay, those with higher monthly payments might be at risk of churning and may need targeted retention strategies.
 
 ![Image9](plots/payment.jpg)
+
 **Electronic Check:** A significant number of customers who use electronic checks tend to churn, as indicated by the proportionally high orange bar. This might suggest dissatisfaction with this payment method or that this group could include more new or tech-savvy customers who are also more comfortable changing providers.
 
 **Mailed Check, Bank Transfer, and Credit Card:** These payment methods show lower churn rates compared to electronic checks. It seems customers using these methods are less likely to churn, potentially indicating a more stable customer base or a preference for traditional payment methods.
@@ -121,12 +126,15 @@ The plot implies that while long-term customers tend to stay, those with higher 
 The company might consider investigating why customers using electronic checks are more prone to churn. It could be beneficial to offer incentives for using more stable payment methods or to improve the electronic check system if issues are present. Encouraging customers to switch to automated payments could potentially reduce churn, as these methods appear to have a lower associated churn rate.
 
 ![Image10](plots/feature_importance.png)
+
 The feature importance chart shows 'monthly_charges' and 'total_charges' as the top indicators of customer churn, suggesting billing amounts are key predictors. Payment methods, especially electronic checks, and service features like streaming and security services also influence churn but to a lesser extent. Demographics and contract types have a role, but they're less critical than financial factors. The negative importance for 'online_security_No Service' may need further investigation to understand its significance. Overall, financial aspects are the strongest predictors of churn in this model.
 
 ![Image11](plots/feature_importance2.png)
+
 The chart highlights billing factors, contract terms, and payment methods as key predictors of churn. Service features and demographics also play a role but are less significant. Overall, financial and contractual aspects are critical in influencing customer retention.
 
 ![Image12](plots/CM_XGB.png)
+
 ![Image13](plots/ROC_curve.png)
 
 The ROC curve provided with an area under the curve (AUC) of 0.85 indicates a very good predictive performance of the XGBClassifier. The AUC value ranges from 0 to 1, where 1 indicates perfect prediction and 0.5 denotes a performance no better than random chance. With an AUC of 0.85, the classifier is considered to have a high level of discriminative ability to distinguish between the positive class (churn) and the negative class (no churn).
