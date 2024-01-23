@@ -38,7 +38,7 @@ The cumulative density plot's smooth curve indicates no abrupt changes in the bi
 ![Image2](plots/churn.jpg)
 The graph displays a significant class imbalance between the two classes: '0' (No Churn) and '1' (Churn). There are noticeably more customers who have not churned ('0') compared to those who have ('1'). This imbalance is a common issue and will be addressed during the modeling phase to prevent the model from being biased toward the majority class.
 
-![Image3](plots/monthly_churn.jpg)
+![Image3](plots/monthly_charges_churn.jpg)
 **Central Tendency:** The median monthly charge for customers who churn ('1') appears to be higher than for those who do not churn ('0'). This suggests that higher monthly charges could be associated with a greater likelihood of churn.
 
 **Spread and Variability:** The interquartile range (IQR) for both groups is substantial, indicating variability in the monthly charges among customers. However, the IQR for churned customers seems to be wider, implying more variability in the amounts they were charged compared to those who didn't churn.
@@ -81,7 +81,7 @@ The right chart shows that customers with fiber optic service have a higher chur
 
 **Streaming Services:** Churn rates for streaming TV and movies don't show as clear a trend as other services, indicating that different factors might influence churn for customers interested in streaming.
 
-![Image6](plots/demographic_columns.jpg)
+![Image6](plots/demographc_columns.jpg)
 **Gender vs Churn:** The charts suggest that gender does not have a pronounced difference in churn rates, as both female and male customers have similar churn counts.
 
 **Senior Citizen vs Churn:** The chart shows a higher proportion of churn among senior citizens compared to non-senior citizens. This could suggest that senior citizens are either more sensitive to certain aspects of the service or they have different expectations and needs that are not being met.
@@ -125,6 +125,7 @@ The chart highlights billing factors, contract terms, and payment methods as key
 
 ![Image12](plots/CM_XGB.png)
 ![Image13](plots/ROC_curve.png)
+
 The ROC curve provided with an area under the curve (AUC) of 0.85 indicates a very good predictive performance of the XGBClassifier. The AUC value ranges from 0 to 1, where 1 indicates perfect prediction and 0.5 denotes a performance no better than random chance. With an AUC of 0.85, the classifier is considered to have a high level of discriminative ability to distinguish between the positive class (churn) and the negative class (no churn).
 
 The project successfully navigated through data preprocessing, exploratory analysis, and model development to create a reliable churn prediction model. The difficulties faced along the way, such as class imbalance and feature encoding, were overcome through strategic data augmentation and preprocessing. The key to solving the task was a blend of thorough EDA, feature engineering, and model tuning, which together led to the selection of an **XGBClassifier** with predictive power. The **ROC-AUC score of 0.85** signifies that the model is well-tuned and capable of accurately identifying potential churn risks, which can significantly benefit the telecom operator's customer retention strategies.
