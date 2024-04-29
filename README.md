@@ -3,7 +3,7 @@
 
 The project focuses on creating a predictive model to tell which customers are likely to keep of discontinue their telecom operator's services. This entails initial analysis of datasets covering contracts, personal, and internet/phone service usage details. A thorough exploratory data analysis will uncover trends and guide feature engineering. Emphasis will be on one-hot encoding for categorical variables and devising new features that reflect customer behavior.
 
-Using boosting algorithms, the project aims to leverage capacity for binary classification and to fine-tune the predictive model through hyperparameter optimization. The primary performance metric, the AUC-ROC score, will gauge the model's success in finding potential churn from loyal customers, and should result in 0.88 or above.
+Using boosting algorithms, the project aims to leverage capacity for binary classification and to fine-tune the predictive model through hyperparameter optimization. The primary performance metric, the AUC-ROC score, will gauge the model's success in finding potential churn from loyal customers, and should result in 0.88 or above, by requirement.
 
 The project aims to equip the telecom operatoring company with the ability to find those likely to churn and proactively send targeted promotions and customer retention plan options.
 
